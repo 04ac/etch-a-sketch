@@ -9,6 +9,12 @@ body {
     gap: 40px;
 }
 
+.instructions {
+    font-size: 25px;
+    align-self: flex-start;
+    color: burlywood;
+}
+
 .controls {
     display: flex;
     flex-direction: column;
@@ -34,15 +40,20 @@ body {
 .element {
     border: 1px teal solid;
     flex: 1;
+    background-color: aliceblue;
+}
+
+.element:hover {
+    background-color: teal;
 }
 
 .title {
     margin-top: 40px;
     font-size: 50px;
+    align-self: flex-start;
 }
 
 .board {
-    background-color: aliceblue;
     width: 550px;
     height: 550px;
     margin: auto;
@@ -88,7 +99,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-#submit {
+.button {
     max-width: 200px;
     border-radius: 8px;
     background-color: teal;
@@ -96,6 +107,34 @@ input[type=number] {
     border: 3px pink solid;
     padding: 5px 8px;
     font-size: 25px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+#submit {
     margin: 15px 0px 25px;
     align-self: center;
 }
+
+#color-picker-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 25px;
+}
+
+#color-picker-div div {
+    align-self: flex-start;
+}
+
+#color-picker {
+    height: 30px;
+    background-color: teal;
+    width: 30px;
+    border: 0;
+}
+
+.clicked {
+    background-color: turquoise;
+}
+

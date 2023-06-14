@@ -10,15 +10,22 @@
     <body>
         <div class="controls">
             <h1 class="title">Etch a Sketch!</h1>
+            <div class="instructions">Click inside grid to toggle pen.</div>
             <div id="form">
                 <div id="form-row">
                     <input type="number" placeholder="" id="number-per-side">
-                    <p>Squares per side. Max 50.</p>
+                    <p>Squares per side. Max 64.</p>
                 </div>
-                <button type="submit" id="submit">Reset Board</button>
+                <button type="submit" id="submit" class="button">Reset Board</button>
+                <div id="color-picker-div">
+                    <div>Choose colour: </div>
+                    <input type="color" value="#9acd32" id="color-picker"/>
+                </div>
+                <button class="button" id="rgb">RGB mode</button>
+                <button class="button" id="eraser">Activate Eraser</button>
             </div>
         </div>
-        <div class="board" id="board">
+        <div class="board boardClicked" id="board">
             <!-- <div class="row"><div class="element"></div><div class="element"></div>...</div> -->
         </div>
     </body>
