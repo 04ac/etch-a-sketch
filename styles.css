@@ -1,0 +1,101 @@
+body {
+    background-color: teal;
+    color: white;
+    padding: 60px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 10px pink solid;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    flex: 1;
+}
+
+.element {
+    border: 1px teal solid;
+    flex: 1;
+}
+
+.title {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.board {
+    background-color: aliceblue;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    padding: 0px 0px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#number-per-side {
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: teal;
+    color: white;
+    border: 3px pink solid;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#form-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* Hides arrows from number input*/ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hides arrows from number input*/ /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#submit {
+    max-width: 200px;
+    border-radius: 8px;
+    background-color: teal;
+    color: white;
+    border: 3px pink solid;
+    padding: 5px 8px;
+    font-size: 25px;
+    margin: 15px 0px 25px;
+    align-self: center;
+}
