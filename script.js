@@ -23,11 +23,8 @@ function resetBoard(boxesPerRow) {
 
     //Listens for mouseover
     const elements = document.querySelectorAll("div.element");
-
-    console.log(elements);
     elements.forEach(element => {
         element.addEventListener("mouseover", function changeBg() {
-            //
             if (!board.classList.contains("boardClicked")) {
                 if (eraseButton.classList.contains("clicked")) {
                     element.style.backgroundColor = "aliceblue";
